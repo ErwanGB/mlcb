@@ -1,7 +1,13 @@
 export const addRecipe = (recipe) => {
-  console.log('adding recipe:', recipe);
   return {
-      type: 'add',
+      type: 'ADD_RECIPE',
       recipe
   };
+}
+
+export const rmRecipe = (recipe) => {
+  return {
+      type: 'REMOVE_RECIPE',
+      recipe
+  }
 }
